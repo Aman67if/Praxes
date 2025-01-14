@@ -30,3 +30,40 @@ menuOpenClose.addEventListener("click", () => {
   }
 });
 
+let subscriptions = [
+  {
+    price: "201",
+    title: "Shapes",
+    subTitle: "EXP 1",
+    url: "/",
+  },
+  {
+    price: "201",
+    title: "Shapes",
+    subTitle: "EXP 1",
+    url: "/",
+  },
+  {
+    price: "201",
+    title: "Shapes",
+    subTitle: "EXP 1",
+    url: "/",
+  },
+  ];
+  
+  subscriptions.forEach((item) => {
+    document.querySelector(
+      ".subscription-cards"
+    ).innerHTML += `<div class="subscription-card">
+          <div class="price">
+            <h4>INR ${item.price} /-</h4>
+          </div>
+          <h2 class="chapter">${item.title}</h2>
+          <h4 class="sub-topic">${item.subTitle}</h4>
+          <a href="${item.url}"><button class="join-btn">Join Class</button></a>
+        </div>`;
+  });
+
+
+
+  

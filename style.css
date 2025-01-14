@@ -666,6 +666,94 @@ h5 {
   font-size: 1rem;
 }
 
+
+/* ************************** Subscription Page ************************* */
+
+#subscription-main {
+  min-height: 90%;
+  width: 100%;
+  background-color: var(--page-color);
+  padding-bottom: 4rem;
+}
+#subscription-main > h2 {
+  text-align: center;
+  padding-top: 10rem;
+  font-size: 3rem;
+}
+
+.subscription-cards {
+  min-height: 100%;
+  width: 100%;
+  padding: 2rem 2rem 0 2rem;
+  display: flex;
+  justify-content: start;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.subscription-card {
+  height: 30vh;
+  width: 30vw;
+  background: var(--background);
+  backdrop-filter: blur(10px);
+  border: 1.6px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  padding: 1.8rem 0 0 2.2rem;
+  overflow: hidden;
+}
+.subscription-card .price {
+  height: 2.6rem;
+  width: 6.9rem;
+  background-color: rgb(69, 195, 44);
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 0 0 15px;
+}
+
+.subscription-card .price h4 {
+  font-size: 1.2em;
+  color: white;
+}
+
+.subscription-card .chapter {
+  max-width: 90%;
+  height: fit-content;
+  font-size: 2rem;
+  margin-top: 3rem;
+}
+
+.subscription-card .sub-topic {
+  font-size: 1rem;
+  height: fit-content;
+  max-width: 90%;
+}
+
+.subscription-card .join-btn {
+  position: absolute;
+  bottom: 1.3rem;
+  left: 34%;
+  font-size: 1.1rem;
+  padding: 0.6rem 1.5rem 0.6rem 1.5rem;
+  color: rgb(0, 0, 0);
+  background-color: var(--background);
+  border-radius: 50px;
+  border: 1.6px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.subscription-card .join-btn:hover {
+  scale: 1.15;
+  background-color: rgb(69, 195, 44) !important;
+  transition: all 0.3s ease-out;
+}
+
+
 /* ******************** MEDIA QUERIES ******************* */
 
 @media (max-width: 400px) {
@@ -1244,53 +1332,100 @@ h5 {
 
   /* *************************** LOGIN PAGE ******************************** */
 
-#login-main {
-  height: 90%;
+  #login-main {
+    height: 90%;
+    width: 100%;
+    background-color: var(--page-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 6rem;
+  }
+
+  .login-container {
+    height: 80%;
+    width: 95%;
+    background-color: rgba(255, 255, 255, 0.37);
+    border-radius: 50px;
+    border: 1.6px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 2rem;
+  }
+
+  .login-container > h3 {
+    font-size: 2rem;
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  .input-fields {
+    height: 80%;
+    width: 100%;
+  }
+
+  .input-fields .input-bar {
+    height: 2rem;
+    width: 80%;
+    padding: 1rem 3rem 1rem 1rem;
+    border-radius: 10px;
+    border: 1px solid gray;
+  }
+
+  .input-fields h3 {
+    font-size: 1.7rem;
+  }
+
+  .login-container h4 {
+    margin-top: 1.3rem;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  /* ************************** Subscription Page ************************* */
+
+#subscription-main {
+  min-height: 90%;
   width: 100%;
   background-color: var(--page-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 6rem;
+  padding-bottom: 4rem;
+}
+#subscription-main > h2 {
+  text-align: center;
+  padding-top: 7rem;
+  font-size: 3rem;
 }
 
-.login-container {
-  height: 80%;
-  width: 95%;
-  background-color: rgba(255, 255, 255, 0.37);
+.subscription-card {
+  height: 28vh;
+  width: 100%;
+  background: var(--background);
+  backdrop-filter: blur(10px);
+  border: 1.6px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  padding: 1.8rem 0 0 2.2rem;
+  overflow: hidden;
+}
+
+.subscription-card .chapter {
+  max-width: 90%;
+  height: fit-content;
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+.subscription-card .join-btn {
+  position: absolute;
+  bottom: 1.3rem;
+  left: 30%;
+  font-size: 1.1rem;
+  padding: 0.6rem 1.5rem 0.6rem 1.5rem;
+  color: rgb(0, 0, 0);
+  background-color: var(--background);
   border-radius: 50px;
   border: 1.6px solid rgba(255, 255, 255, 0.8);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  border-radius: 10px;
-  padding: 2rem;
-}
-
-.login-container > h3 {
-  font-size: 2rem;
-  margin-top: 1rem;
-  text-align: center;
-}
-
-.input-fields {
-  height: 80%;
-  width: 100%;
-}
-
-.input-fields .input-bar {
-  height: 2rem;
-  width: 80%;
-  padding: 1rem 3rem 1rem 1rem;
-  border-radius: 10px;
-  border: 1px solid gray;
-}
-
-.input-fields h3 {
-  font-size: 1.7rem;
-}
-
-.login-container h4 {
-  margin-top: 1.3rem;
-  font-size: 1rem;
-  text-align: center;
+  cursor: pointer;
 }
 }
