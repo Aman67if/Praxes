@@ -668,7 +668,7 @@ h5 {
 
 /* ******************** MEDIA QUERIES ******************* */
 
-@media (max-width: 360px) {
+@media (max-width: 400px) {
   html,
   body {
     height: 100%;
