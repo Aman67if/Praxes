@@ -966,7 +966,7 @@ h5 {
     position: absolute;
     z-index: 1;
     top: 22rem;
-    left: 20%;
+    left: 23%;
     font-size: 1rem;
     padding: 0.7rem 5rem 0.7rem 5rem;
     transform: translateX(-10%);
@@ -1090,9 +1090,10 @@ h5 {
   .card .join-btn {
     position: absolute;
     bottom: 1rem;
-    left: 5.2rem;
+    left: 50%;
     font-size: 1rem;
     padding: 0.4rem 1.5rem 0.4rem 1.5rem;
+    transform: translateX(-50%);
   }
 
   .card .join-btn:hover {
