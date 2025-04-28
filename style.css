@@ -262,16 +262,18 @@ h5 {
   width: 100%;
   font-size: 3rem;
   text-align: center;
+  margin-top: 2rem;
 }
 
 .page2 .classes {
-  height: 35vh;
+  min-height: 40vh;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 2rem 0 2rem;
   flex-wrap: wrap;
+  gap: 20px;
 }
 
 .page2 .classes .class {
@@ -414,7 +416,7 @@ h5 {
 /* ***************************** FOOTER STARTS ********************************* */
 
 #footer {
-  height: 40vh;
+  height: fit-content;
   width: 100%;
   background-color: var(--background);
   display: flex;
@@ -1021,7 +1023,7 @@ h5 {
   }
 
   .page2 .classes .class {
-    height: 55vw;
+    height: 18rem;
     width: 50vh;
     background: var(--background);
     backdrop-filter: blur(10px);
