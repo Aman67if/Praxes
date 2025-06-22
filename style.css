@@ -5,6 +5,10 @@
   font-style: normal;
 }
 
+@import url('./about.css');
+@import url('./login.css');
+@import url('./subscription.css');
+
 :root {
   --glass-background: #a9e3d0b2;
   --background: #a9e3d0;
@@ -800,10 +804,9 @@ h5 {
   font-size: 1.2rem;
 }
 
-
 /* ******************** MEDIA QUERIES ******************* */
 
-@media (max-width: 400px) {
+@media (max-width: 520px) {
   html,
   body {
     height: 100%;
@@ -1166,38 +1169,6 @@ h5 {
     transition: all 0.3s ease-out;
   }
 
-  /* ***************************** PAGE 3 *************************** */
-
-  #main .page3 {
-    height: 100vh;
-    width: 100vw;
-    background-color: var(--page-color);
-    position: relative;
-    box-shadow: inset 0px -10px 12px rgba(0, 0, 0, 0.14);
-    display: none;
-  }
-
-  #main .about {
-    border-bottom: 7px solid black;
-    border-radius: 10px;
-  }
-
-  #main .about-para {
-    top: 38%;
-  }
-
-  #main .about-para-line {
-    top: 80%;
-  }
-
-  #main .page3 .book-image img {
-    height: 78%;
-    width: auto;
-    opacity: 0.3;
-    user-select: none;
-    -webkit-user-drag: none;
-  }
-
   /* ***************************** FOOTER STARTS ********************************* */
 
   #footer {
@@ -1312,30 +1283,6 @@ h5 {
     font-size: 1.2rem;
   }
 
-  /* ******************* ABOUT MAIN ************************* */
-
-  #about-main .page3 {
-    height: fit-content;
-    width: 100vw;
-    padding-top: 6rem;
-    background-color: var(--page-color);
-    position: relative;
-    box-shadow: inset 0px -10px 12px rgba(0, 0, 0, 0.14);
-    padding-bottom: 2rem;
-  }
-
-  #about-main .about {
-    font-size: 3rem;
-    border-radius: 10px;
-    text-align: center;
-  }
-
-  #about-main .about-para {
-    height: fit-content;
-    width: 100%;
-    text-align: center;
-    padding: 0 1.3rem 0 1.3rem;
-  }
 
   /* ********************** CLASS ********************** */
 
@@ -1440,7 +1387,66 @@ h5 {
     text-align: center;
   }
 
-  /* ************************** Subscription Page ************************* */
+
+   /* ***************************** PAGE 3 *************************** */
+
+  #main .page3 {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--page-color);
+    position: relative;
+    box-shadow: inset 0px -10px 12px rgba(0, 0, 0, 0.14);
+    display: none;
+  }
+
+  #main .about {
+    border-bottom: 7px solid black;
+    border-radius: 10px;
+  }
+
+  #main .about-para {
+    top: 38%;
+  }
+
+  #main .about-para-line {
+    top: 80%;
+  }
+
+  #main .page3 .book-image img {
+    height: 78%;
+    width: auto;
+    opacity: 0.3;
+    user-select: none;
+    -webkit-user-drag: none;
+  }
+  
+  
+  /* ******************* ABOUT MAIN ************************* */
+
+  #about-main .page3 {
+    height: fit-content;
+    width: 100vw;
+    padding-top: 6rem;
+    background-color: var(--page-color);
+    position: relative;
+    box-shadow: inset 0px -10px 12px rgba(0, 0, 0, 0.14);
+    padding-bottom: 2rem;
+  }
+
+  #about-main .about {
+    font-size: 3rem;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  #about-main .about-para {
+    height: fit-content;
+    width: 100%;
+    text-align: center;
+    padding: 0 1.3rem 0 1.3rem;
+  }
+
+    /* ************************** Subscription Page ************************* */
 
 .subscription-main {
   min-height: 90%;
@@ -1490,5 +1496,199 @@ h5 {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   cursor: pointer;
 }
+
+}
+
+
+
+/* ******************** MEDIA QUERIES ******************* */
+
+@media (min-width: 521px) and (max-width: 900px) {
+  html,
+  body {
+    height: 100% !important;
+    width: 100% !important;
+    overflow-x: hidden;
+  }
+
+  #header {
+    height: 9vh;
+    width: 100%;
+    padding: 0 1rem 0 0.5rem;
+  }
+
+  #header #logo {
+    width: 8rem;
+    overflow: hidden;
+  }
+
+  #header #logo img {
+    height: 3rem;
+    width: 3.5rem;
+    margin-top: 2em;
+  }
+
+  #header #logo .logo-name {
+    width: 9rem;
+    left: 3.7rem;
+    font-size: 0.9rem;
+  }
+
+  #header #menu {
+    padding: 0.6rem 0.8rem;
+    gap: 15px;
+  }
+
+  #header #menu a .btn {
+    font-size: 1rem;
+  }
+
+  #main .heading {
+    font-size: 4.8rem;
+    top: 28%;
+    height: auto;
+    width: 100%;
+  }
+
+  #main p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    width: 90%;
+    top: 45%;
+  }
+
+  #main .explore-btn {
+    font-size: 1.1rem;
+    padding: 0.7rem 2.5rem;
+    top: 90%;
+  }
+
+  #main .page .book-image {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#main .page1 .book-image img {
+  margin-top: 5rem;
+  height: 50%;
+  width: auto;
+  opacity: 0.3;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+#main .line-container {
+  display: none;
+}
+
+
+#main .line-container .circ1 {
+  left: -16rem;
+}
+
+#main .line-container .circ2 {
+  right: 16rem;
+}
+
+  .page2 > h2,
+  #class-main > h2,
+  .subscription-main > h2 {
+    font-size: 2rem;
+    /* padding-top: 5rem; */
+  }
+
+  .page2 .classes,
+  #class-main .classes,
+  .subscription-cards {
+    width: 100%;
+    flex-direction: column;
+    gap: 18px;
+    padding: 1rem;
+    align-items: center;
+  }
+
+  .page2 .classes .class,
+  #class-main .classes .class,
+  .subscription-card {
+    width: 85vw;
+    min-width: unset;
+    height: auto;
+    padding: 1rem 0.5rem;
+  }
+
+  .card .chapter,
+  .subscription-card .chapter {
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+  }
+
+  .card .join-btn,
+  .subscription-card .join-btn {
+    left: 50%;
+    font-size: 1rem;
+    padding: 0.4rem 1.2rem;
+    transform: translateX(-50%);
+  }
+
+  #footer {
+    flex-direction: column;
+    padding: 1.5rem 1rem;
+    gap: 1.5rem;
+    align-items: flex-start;
+  }
+
+  #footer .contact-us,
+  #footer .social-platforms,
+  #footer .what-offer {
+    padding: 2rem;
+    width: 100%;
+    align-items: flex-start;
+    margin-top: 0;
+  }
+
+  #footer .what-offer .offers {
+  display: flex;
+  flex-direction: column;
+  align-items: self-start;
+  justify-content: center;
+  gap: 8px;
+}
+
+.login-container {
+  height: 90%;
+  width: 90%;
+  background-color: rgba(255, 255, 255, 0.37);
+  border-radius: 50px;
+  border: 1.6px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 3rem;
+}
+  
+}
+
+@media (min-width: 521px) and (max-width: 750px) {
+  #header #logo img {
+    height: 3rem;
+    width: 3.5rem;
+    margin-top: 0.6em;
+  }
+
+  #main .heading {
+    font-size: 2.5rem;
+    top: 24%;
+    height: auto;
+    width: 100%;
+  }
+
+  #main p {
+    font-size: 1rem;
+    font-weight: 500;
+    width: 90%;
+    top: 42%;
+  }
 
 }
