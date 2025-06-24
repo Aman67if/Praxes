@@ -4,19 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Praxes</title>
-    <link rel="stylesheet" href="./style.css?v=1750567772" />
-    <style>
-      .offers a {
-        text-decoration: none;
-        color: #000;
-      }
-    </style>
+    <link rel="stylesheet" href="/src/css/navbar.css" />
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <link rel="stylesheet" href="/src/css/footer.css" />
   </head>
 
   <body>
     <header id="header">
       <section id="logo">
-        <img src="./logo1.png" alt="" />
+        <img src="/src/public/logo1.png" alt="" />
         <div class="logo-name">
           <h3>PRAXES</h3>
           <h5>Practice</h5>
@@ -27,29 +23,35 @@
         <div class="menu-open-close">
           <img
             class="menuImg"
-            src="./svg/menu.svg"
+            src="/src/svg/menu.svg"
             alt="menu"
             onclick="event.preventDefault();"
           />
         </div>
         <section id="mobile-menu">
-          <a href="index"><button class="btn">HOME</button></a>
-          <a href="about"><button class="btn">ABOUT</button></a>
-          <a href="login"><button class="btn">LOGIN</button></a>
-          <a href="subscription"><button class="btn">SUBSCRIPTIONS</button></a>
+          <a href="/src/html/index.html"><button class="btn">HOME</button></a>
+          <a href="/src/html/about.html"><button class="btn">ABOUT</button></a>
+          <a href="/src/html/login.html"><button class="btn">LOGIN</button></a>
+          <a href="/src/html/subscription.html"
+            ><button class="btn">SUBSCRIPTIONS</button></a
+          >
         </section>
         <section id="menu">
-          <a href="index"><button class="btn">HOME</button></a>
-          <a href="about"><button class="btn">ABOUT</button></a>
-          <a href="login"><button class="btn">LOGIN</button></a>
-          <a href="subscription"><button class="btn">SUBSCRIPTIONS</button></a>
+          <a href="/src/html/index.html"><button class="btn">HOME</button></a>
+          <a href="/src/html/about.html"><button class="btn">ABOUT</button></a>
+          <a href="/src/html/login.html"><button class="btn">LOGIN</button></a>
+          <a href="/src/html/subscription.html"
+            ><button class="btn">SUBSCRIPTIONS</button></a
+          >
         </section>
       </div>
     </header>
 
     <main id="main">
       <section class="page1">
-        <div class="book-image"><img src="./book 0.png" alt="" /></div>
+        <div class="book-image">
+          <img src="/src/public/book 0.png" alt="" />
+        </div>
         <h1 class="heading">THE POWER OF PRACTICE</h1>
         <p class="paragraph">
           Practice is the secret to success and improving your skills. Our
@@ -406,9 +408,8 @@
                 </div>
               </div>
             </div>
-          </div>   
+          </div>
         </div>
-
 
         <h2 class="popular-subscriptions">Popular Subscriptions</h2>
         <div class="cards classes">
@@ -446,8 +447,8 @@
           </div>
         </div>
         <a class="explore-subscriptions" href="subscription">
-            <button>Explore Subscriptions</button>
-          </a>
+          <button>Explore Subscriptions</button>
+        </a>
       </section>
 
       <footer id="footer">
@@ -455,21 +456,21 @@
           <h3>Contact Us</h3>
           <div class="contacts">
             <div class="contact-details">
-              <img src="./svg/phone.svg" alt="" />
+              <img src="/src/svg/phone.svg" alt="" />
               <div class="contact">
                 <h4 class="contact-title">Phone</h4>
                 <h5>+91 62602 03132</h5>
               </div>
             </div>
             <div class="contact-details">
-              <img src="./svg/mail.svg" alt="" />
+              <img src="/src/svg/mail.svg" alt="" />
               <div class="contact">
                 <h4 class="contact-title">Email</h4>
                 <h5>praxes2020@gmail.com</h5>
               </div>
             </div>
             <div class="contact-details">
-              <img src="./svg/map.svg" alt="" />
+              <img src="/src/svg/map.svg" alt="" />
               <div class="contact">
                 <h4 class="contact-title">Address</h4>
                 <h5>
@@ -483,15 +484,15 @@
         <div class="social-platforms">
           <h3>Our Platforms</h3>
           <div class="platform">
-            <img src="./svg/Facebook.svg" alt="" />
+            <img src="/src/svg/Facebook.svg" alt="" />
             <h4>Facebook</h4>
           </div>
           <div class="platform">
-            <img src="./svg/instagram.svg" alt="" />
+            <img src="/src/svg/instagram.svg" alt="" />
             <h4>Instagram</h4>
           </div>
           <div class="platform">
-            <img src="./svg/LinkedIn.svg" alt="" />
+            <img src="/src/svg/LinkedIn.svg" alt="" />
             <h4>LinkedIn</h4>
           </div>
         </div>
@@ -501,19 +502,18 @@
             <a href="disclaimer">
               <h4>Disclaimer</h4>
             </a>
-            <a href="privacy" style="text-decoration: none">
+            <a href="privacy">
               <h4>Privacy</h4>
             </a>
-            <a href="refund_policy" style="text-decoration: none">
+            <a href="refund_policy">
               <h4>Refund Policy</h4>
             </a>
-            <a href="terms_and_condition" style="text-decoration: none">
+            <a href="terms_and_condition">
               <h4>Terms and condition</h4>
             </a>
           </div>
         </div>
       </footer>
-
     </main>
 
     <script
@@ -522,6 +522,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script src="./script.js"></script>
+    <script src="/src/javascript/script.js"></script>
   </body>
 </html>

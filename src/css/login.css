@@ -1,0 +1,138 @@
+/* *************************** LOGIN PAGE ******************************** */
+@font-face {
+  font-family: "Nunito";
+  src: url(/src/public/Nunito-VariableFont_wght.ttf) format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+:root {
+  --glass-background: #a9e3d0b2;
+  --background: #a9e3d0;
+  --page-color: #e9e9ed;
+  --scroll-bar-color: #7dad9d;
+  --hover-color: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito";
+  user-select: none;
+}
+
+::-webkit-scrollbar {
+  height: 100%;
+  width: 0.6rem;
+  background-color: var(--page-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-bar-color);
+  border-radius: 10px;
+}
+
+*::selection {
+  color: white;
+  background-color: var(--background);
+  -webkit-user-drag: none;
+}
+
+.hover:hover {
+  color: var(--hover-color);
+  transition: color 0.3s ease-out;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+#login-main {
+  height: 90%;
+  width: 100%;
+  background-color: var(--page-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+}
+
+.login-container {
+  height: 80%;
+  width: 30rem;
+  background-color: var(--page-color);
+  border-radius: 50px;
+  border: 1.6px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 2rem 2rem 4rem 2rem;
+}
+
+.login-container > h3 {
+  max-height: 3rem;
+  width: fit-content;
+  font-size: clamp(.2rem, calc(2vw + .5rem), 2rem);
+  text-align: center;
+  width: 100%;
+}
+
+.login-container .input-fields > img {
+  height: 4.5rem;
+  width: auto;
+}
+
+.login-container > h4 {
+  width: 100%;
+  text-align: center;
+}
+
+.input-fields {
+  height: 90%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--background);
+  backdrop-filter: blur(10px);
+  border: 1.6px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  gap: 20px;
+}
+
+.input-fields .input-bar {
+  height: 2rem;
+  width: 80%;
+  padding: 1rem 1rem 1rem 1rem;
+  border-radius: 10px;
+  border: 1px solid gray;
+}
+
+.input-fields h3 {
+  width: 100%;
+  text-align: center;
+  font-size: clamp(.8rem, calc(2vw + .8rem), 2rem);
+  color: white;
+}
+
+.input-fields button {
+  height: 2.4rem;
+  width: 40%;
+  color: rgb(0, 0, 0);
+  background-color: var(--background);
+  border-radius: 50px;
+  border: 1.6px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  font-size: clamp(.5rem, calc(1vw + .7rem), 1.2rem);
+}
+
+.login-container h4 {
+  margin-top: 1.3rem;
+  font-size: clamp(.5rem, calc(1vw + .7rem), 1rem);
+}

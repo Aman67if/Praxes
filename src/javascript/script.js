@@ -5,7 +5,7 @@ menuContainer = document.querySelector(".mobile-menu-container");
 
 menuOpenClose.addEventListener("click", () => {
   if (openOrClose == 0) {
-    menuImg.src = "/svg/close.svg";
+    menuImg.src = "/src/svg/close.svg";
     openOrClose = 1;
     gsap.to("#mobile-menu", {
       height: "20rem",
@@ -16,7 +16,7 @@ menuOpenClose.addEventListener("click", () => {
     });
     menuContainer.style.display = "block";
   } else {
-    menuImg.src = "/svg/menu.svg";
+    menuImg.src = "/src/svg/menu.svg";
     openOrClose = 0;
     gsap.to("#mobile-menu", {
       height: "0rem",
@@ -25,33 +25,33 @@ menuOpenClose.addEventListener("click", () => {
       duration: 0.37,
     });
     setTimeout(() => {
-    menuContainer.style.display = "none";
-    },400)
+      menuContainer.style.display = "none";
+    }, 400);
   }
 });
 
-let subscriptions = [
-  {
-    price: "201",
-    title: "Shapes",
-    subTitle: "EXP 1",
-    url: "/",
-  },
-  {
-    price: "201",
-    title: "Shapes",
-    subTitle: "EXP 1",
-    url: "/",
-  },
-  {
-    price: "201",
-    title: "Shapes",
-    subTitle: "EXP 1",
-    url: "/",
-  },
-  ];
-  
-  /* subscriptions.forEach((item) => {
+// let subscriptions = [
+//   {
+//     price: "201",
+//     title: "Shapes",
+//     subTitle: "EXP 1",
+//     url: "/",
+//   },
+//   {
+//     price: "201",
+//     title: "Shapes",
+//     subTitle: "EXP 1",
+//     url: "/",
+//   },
+//   {
+//     price: "201",
+//     title: "Shapes",
+//     subTitle: "EXP 1",
+//     url: "/",
+//   },
+// ];
+
+/* subscriptions.forEach((item) => {
     document.querySelector(
       ".subscription-cards"
     ).innerHTML += `<div class="subscription-card">

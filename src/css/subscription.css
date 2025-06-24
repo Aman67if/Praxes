@@ -1,0 +1,148 @@
+@font-face {
+  font-family: "Nunito";
+  src: url(/src/public/Nunito-VariableFont_wght.ttf) format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+:root {
+  --glass-background: #a9e3d0b2;
+  --background: #a9e3d0;
+  --page-color: #e9e9ed;
+  --scroll-bar-color: #7dad9d;
+  --hover-color: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito";
+  user-select: none;
+}
+
+::-webkit-scrollbar {
+  height: 100%;
+  width: 0.6rem;
+  background-color: var(--page-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-bar-color);
+  border-radius: 10px;
+}
+
+*::selection {
+  color: white;
+  background-color: var(--background);
+  -webkit-user-drag: none;
+}
+
+.hover:hover {
+  color: var(--hover-color);
+  transition: color 0.3s ease-out;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+
+#subscription-main {
+  min-height: 100%;
+  width: 100%;
+  background-color: var(--page-color);
+  padding-top: 3rem;
+}
+
+#subscription-main .main-title {
+  width: 100%;
+  text-align: center;
+  color: black;
+  font-size: clamp(2rem, calc(4vw + 1.2rem), 4vw);
+}
+
+.subscription-cards {
+  min-height: 100%;
+  width: 100%;
+  padding: 4rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(41vw, 1fr));
+  place-items: start;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+
+.subscription-card {
+  min-height: 45vh;
+  width: 100%;
+  position: relative;
+  background: var(--background);
+  backdrop-filter: blur(10px);
+  border: 1.6px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  padding: 1.8rem 0 4rem 2.2rem;
+  overflow: hidden;
+}
+
+.subscription-card:hover {
+  transform: scale(1.02);
+  transition: all 0.2s linear;
+}
+.subscription-card .price {
+  height: 2.6rem;
+  width: 6.9rem;
+  background-color: rgb(69, 195, 44);
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 0 0 15px;
+}
+
+.subscription-card .price h4 {
+  font-size: 1.2em;
+  color: white;
+}
+
+.subscription-card .chapter {
+  max-width: 90%;
+  height: fit-content;
+  font-size: clamp(1rem, calc(1vw + 1rem), 2rem);
+  margin-top: 3rem;
+}
+
+.subscription-card .sub-topic {
+  font-size: clamp(.9rem, calc(1vw + .2rem), 1rem);
+  height: fit-content;
+  max-width: 90%;
+}
+
+.subscription-card .join-btn {
+  height: 2.2rem;
+  width: 6.5rem;
+  position: absolute;
+  bottom: 1.3rem;
+  left: 50%;
+  font-size: 1.1rem;
+  color: rgb(0, 0, 0);
+  background-color: var(--background);
+  border-radius: 50px;
+  border: 1.6px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transform: translateX(-50%);
+}
+
+.subscription-card .join-btn:hover {
+  scale: 1.05;
+  background-color: var(--scroll-bar-color) !important;
+  transition: all 0.3s ease-out;
+}

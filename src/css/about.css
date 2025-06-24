@@ -1,0 +1,88 @@
+@font-face {
+  font-family: "Nunito";
+  src: url(/src/public/Nunito-VariableFont_wght.ttf) format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+:root {
+  --glass-background: #a9e3d0b2;
+  --background: #a9e3d0;
+  --page-color: #e9e9ed;
+  --scroll-bar-color: #7dad9d;
+  --hover-color: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito";
+  user-select: none;
+}
+
+::-webkit-scrollbar {
+  height: 100%;
+  width: 0.6rem;
+  background-color: var(--page-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-bar-color);
+  border-radius: 10px;
+}
+
+*::selection {
+  color: white;
+  background-color: var(--background);
+  -webkit-user-drag: none;
+}
+
+.hover:hover {
+  color: var(--hover-color);
+  transition: color 0.3s ease-out;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+#about-main{
+    min-height: 60%;
+    width: 100vw;
+    background-color: var(--page-color);
+}
+
+#about-main .page3{
+    height: 100%;
+    width: 100%;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+
+#about-main .heading {
+  height: fit-content;
+  width: fit-content;
+  font-size: clamp(1.8rem, calc(5vw + 1.2rem), 5vw);
+  margin: auto;
+  z-index: 1;
+  line-height: 1;
+  letter-spacing: 0.1em;
+  text-align: center;
+  border-bottom: 4px solid black;
+  border-radius: 0.5rem;
+}
+
+#about-main p {
+  min-height: 20rem;
+  width: 90%;
+  text-align: center;
+  margin: 3rem auto 0 auto;
+  z-index: 2;
+  letter-spacing: 0.1em;
+  word-spacing: 0.5em;
+  font-size: clamp(.8rem, calc(.5vw + .8rem), 1.4rem);
+}

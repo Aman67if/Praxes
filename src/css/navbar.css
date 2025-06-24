@@ -1,0 +1,135 @@
+#header {
+  height: 10vh;
+  width: 100vw;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--page-color);
+  box-shadow: 0px 4px 10px gray;
+  padding: 0 2rem 0 0.4rem;
+}
+
+#header #logo {
+  height: 100%;
+  min-width: fit-content;
+  display: flex;
+  padding: 0.2rem;
+}
+
+#header #logo img {
+  height: 100%;
+  width: auto;
+  background-size: contain;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+#header #logo .logo-name {
+  height: 100%;
+  width: auto;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 1;
+  margin-left: -0.4rem;
+}
+
+#header #logo .logo-name h3,
+h5 {
+  font: bold;
+}
+
+#header .menu-container #menu {
+  height: fit-content;
+  width: fit-content;
+  background-color: var(--background);
+  display: flex;
+  padding: 0.8rem 1.2rem 0.8rem 1.2rem;
+  border-radius: 50px;
+  gap: 25px;
+}
+
+#header #menu a .btn {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+#mobile-menu {
+  display: none;
+}
+.mobile-menu-container {
+  display: none;
+}
+.menu-open-close {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  /* ############### HEADER START ############### */
+
+  #header {
+    height: 9vh;
+  }
+  #header .menu-container #menu {
+    display: none;
+  }
+
+  #header .menu-container .menu-open-close {
+    height: 2.8rem;
+    width: 2.8rem;
+    position: absolute;
+    top: 0.40rem;
+    right: 20px;
+    z-index: 10;
+    background: var(--glass-background);
+    backdrop-filter: blur(10px);
+    border: 1.5px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #header .menu-container .menu-open-close img {
+    height: 70%;
+    width: 70%;
+    user-select: none;
+    -webkit-user-drag: none;
+  }
+
+  #header .menu-container #mobile-menu {
+    height: 0rem;
+    width: 100%;
+    background: var(--glass-background);
+    backdrop-filter: blur(10px);
+    border: 1.6px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0px -4px 6px inset rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    opacity: 1;
+  }
+
+  #header .menu-container #mobile-menu a .btn {
+    background: none;
+    border: none;
+    font-size: 1.4rem;
+    cursor: pointer;
+  }
+
+  /* ############### HEADER END ############### */
+}
