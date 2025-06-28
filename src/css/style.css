@@ -365,6 +365,11 @@ body {
   #main {
   height: 40%;
   }
+
+  #main .page1{
+    min-height: 40vh;
+  }
+  
   #main p {
   display: none;
   }
