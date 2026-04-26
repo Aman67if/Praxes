@@ -5,7 +5,7 @@ menuContainer = document.querySelector(".mobile-menu-container");
 
 menuOpenClose.addEventListener("click", () => {
   if (openOrClose == 0) {
-    menuImg.src = "/src/svg/close.svg";
+    menuImg.src = "/close.svg";
     openOrClose = 1;
     gsap.to("#mobile-menu", {
       height: "20rem",
@@ -16,7 +16,7 @@ menuOpenClose.addEventListener("click", () => {
     });
     menuContainer.style.display = "block";
   } else {
-    menuImg.src = "/src/svg/menu.svg";
+    menuImg.src = "/menu.svg";
     openOrClose = 0;
     gsap.to("#mobile-menu", {
       height: "0rem",
