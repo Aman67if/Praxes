@@ -221,6 +221,7 @@ body {
 
   .hero__visual {
     display: none;
+    visibility: hidden;
     order: -1;
   }
 
