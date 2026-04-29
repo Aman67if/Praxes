@@ -1,18 +1,17 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Praxes</title>
+    <title>Praxes — Login</title>
     <link rel="stylesheet" href="navbar.css" />
     <link rel="stylesheet" href="login.css" />
     <link rel="stylesheet" href="footer.css" />
   </head>
-
   <body>
     <header id="header">
       <section id="logo">
-        <img src="logo1.png" alt="" />
+        <img src="logo1.png" alt="Praxes Logo" />
         <div class="logo-name">
           <h3>PRAXES</h3>
           <h5>Practice</h5>
@@ -25,21 +24,23 @@
             class="menuImg"
             src="menu.svg"
             alt="menu"
-            onclick="event.preventDefault();"
+            onclick="event.preventDefault()"
           />
         </div>
         <section id="mobile-menu">
           <a href="index.html"><button class="btn">HOME</button></a>
-          <a href="about.html"><button class="btn">ABOUT</button></a>
-          <a href="login.html"><button class="btn">LOGIN</button></a>
+          <a href="classes.html"><button class="btn">CLASSES</button></a>
+          <a href="about.html"><button class="btn">GET MENTOR</button></a>
+          <a href="login.html"><button class="btn active">LOGIN</button></a>
           <a href="subscription.html"
             ><button class="btn">SUBSCRIPTIONS</button></a
           >
         </section>
         <section id="menu">
           <a href="index.html"><button class="btn">HOME</button></a>
-          <a href="about.html"><button class="btn">ABOUT</button></a>
-          <a href="login.html"><button class="btn">LOGIN</button></a>
+          <a href="classes.html"><button class="btn">CLASSES</button></a>
+          <a href="about.html"><button class="btn">GET MENTOR</button></a>
+          <a href="login.html"><button class="btn active">LOGIN</button></a>
           <a href="subscription.html"
             ><button class="btn">SUBSCRIPTIONS</button></a
           >
@@ -49,34 +50,51 @@
 
     <main id="login-main">
       <div class="login-container">
-        <h3>Welcome to Praxes!</h3>
-        <form class="input-fields" id="login_form">
-          <img class="user-login" src="user-login.svg" alt="" />
-          <h3>MEMBER LOGIN</h3>
-          <input
-            id="username"
-            name="username"
-            class="input-bar validate[required]"
-            data-prompt-position="bottomLeft"
-            type="text"
-            placeholder="Email Id"
-          />
-          <input
-            id="password"
-            name="password"
-            class="input-bar validate[required]"
-            data-prompt-position="bottomLeft"
-            type="password"
-            placeholder="Password"
-          />
-          <button type="button" onclick="SignIn('#login_form');return false;">
-            Sign In
-          </button>
-        </form>
-        <h4>
-          Don't have an account?
-          <span><a href="javascript:void(0);">Sign&nbsp;Up</a></span>
-        </h4>
+        <div class="login-header">
+          <div class="login-avatar">&#128100;</div>
+          <h2>Welcome Back</h2>
+          <p>Log in to continue your practice journey</p>
+        </div>
+
+        <div class="login-body">
+          <div class="login-field">
+            <label for="username">Username or Email</label>
+            <input
+              id="username"
+              class="input-bar"
+              type="text"
+              placeholder="Enter your username or email"
+              autocomplete="username"
+            />
+          </div>
+
+          <div class="login-field">
+            <label for="password">Password</label>
+            <input
+              id="password"
+              class="input-bar"
+              type="password"
+              placeholder="Enter your password"
+              autocomplete="current-password"
+            />
+          </div>
+
+          <button class="login-submit">Log In</button>
+
+          <div class="login-divider">
+            <span class="login-divider-line"></span>
+            <span class="login-divider-text">or</span>
+            <span class="login-divider-line"></span>
+          </div>
+
+          <p class="login-footer-note">
+            Don't have an account?&nbsp;
+            <a href="registration.html">Register here</a>
+          </p>
+          <p class="login-footer-note" style="margin-top: 0.6rem">
+            <a href="forgot-password">Forgot password?</a>
+          </p>
+        </div>
       </div>
     </main>
 
@@ -103,7 +121,7 @@
             <div class="contact">
               <h4 class="contact-title">Address</h4>
               <h5>
-                1st floor, Srishti’s Palazzo commercial complex, St. Xavier
+                1st floor, Srishti's Palazzo commercial complex, St. Xavier
                 School Road, Raipur, Chhattisgarh
               </h5>
             </div>
@@ -131,26 +149,11 @@
           <a href="disclaimer"><h4>Disclaimer</h4></a>
           <a href="privacy"><h4>Privacy</h4></a>
           <a href="refund_policy"><h4>Refund Policy</h4></a>
-          <a href="terms_and_condition"><h4>Terms and condition</h4></a>
+          <a href="terms_and_condition"><h4>Terms and Conditions</h4></a>
         </div>
       </div>
     </footer>
 
-    <!-- jQuery JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.7.1.min.js"
-      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-      crossorigin="anonymous"
-    ></script>
-    <!-- Jquery Validation Engine -->
-    <link
-      rel="stylesheet"
-      href="./assets/plugins/validation_engine/css/validationEngine.jquery.css"
-    />
-    <script src="./assets/plugins/validation_engine/js/languages/jquery.validationEngine-en.js"></script>
-    <script src="./assets/plugins/validation_engine/js/jquery.validationEngine.js"></script>
-    <!-- Script JS -->
-    <script src="./js/common.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
       integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="

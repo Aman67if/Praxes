@@ -1,18 +1,17 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Praxes</title>
+    <title>Praxes — Subscriptions</title>
     <link rel="stylesheet" href="navbar.css" />
     <link rel="stylesheet" href="subscription.css" />
     <link rel="stylesheet" href="footer.css" />
   </head>
-
   <body>
     <header id="header">
       <section id="logo">
-        <img src="logo1.png" alt="" />
+        <img src="logo1.png" alt="Praxes Logo" />
         <div class="logo-name">
           <h3>PRAXES</h3>
           <h5>Practice</h5>
@@ -25,74 +24,252 @@
             class="menuImg"
             src="menu.svg"
             alt="menu"
-            onclick="event.preventDefault();"
+            onclick="event.preventDefault()"
           />
         </div>
         <section id="mobile-menu">
           <a href="index.html"><button class="btn">HOME</button></a>
-          <a href="about.html"><button class="btn">ABOUT</button></a>
+          <a href="classes.html"><button class="btn">CLASSES</button></a>
+          <a href="about.html"><button class="btn">GET MENTOR</button></a>
           <a href="login.html"><button class="btn">LOGIN</button></a>
           <a href="subscription.html"
-            ><button class="btn">SUBSCRIPTIONS</button></a
+            ><button class="btn active">SUBSCRIPTIONS</button></a
           >
         </section>
         <section id="menu">
           <a href="index.html"><button class="btn">HOME</button></a>
-          <a href="about.html"><button class="btn">ABOUT</button></a>
+          <a href="classes.html"><button class="btn">CLASSES</button></a>
+          <a href="about.html"><button class="btn">GET MENTOR</button></a>
           <a href="login.html"><button class="btn">LOGIN</button></a>
           <a href="subscription.html"
-            ><button class="btn">SUBSCRIPTIONS</button></a
+            ><button class="btn active">SUBSCRIPTIONS</button></a
           >
         </section>
       </div>
     </header>
 
     <main id="subscription-main">
-      <h2 class="main-title">Our Subscriptions</h2>
-      <div class="subscription-cards">
-        <div class="subscription-card">
-          <div class="price">
-            <h4>INR 99 /-</h4>
-          </div>
-          <h2 class="chapter">Test Series</h2>
-          <h4 class="sub-topic">
-            Mock Test/ Daily Practice Tests/ Weekly Performance Report
-          </h4>
-          <a href="/"><button class="join-btn">Join Plan</button></a>
-        </div>
-        <div class="subscription-card">
-          <div class="price">
-            <h4>INR 999 /-</h4>
-          </div>
-          <h2 class="chapter">All Subjects (Yearly Plan)</h2>
-          <h4 class="sub-topic">
-            Improve your grades with PRAXES yearly plan Unlimited Practice
-            Questions/Time Bounded Tests/Notes /Weekly and monthly report
-          </h4>
-          <a href="/"><button class="join-btn">Join Plan</button></a>
+      <!-- HERO -->
+      <div class="sub-hero">
+        <div class="sub-hero-label">Pricing</div>
+        <h1>Simple, Affordable <span>Plans</span></h1>
+        <p>
+          Choose the plan that fits your goals. All plans include access to our
+          core practice tools with no hidden charges.
+        </p>
+      </div>
+
+      <!-- PLANS -->
+      <div class="sub-plans-section">
+        <div class="sub-section-title">
+          <h2>Choose Your <span>Plan</span></h2>
+          <div class="sub-section-line"></div>
+          <p>
+            Everything you need to prepare smarter — from daily practice to full
+            exam readiness.
+          </p>
         </div>
 
-        <div class="subscription-card">
-          <div class="price">
-            <h4>INR 350 /-</h4>
+        <div class="subscription-cards">
+          <!-- Test Series -->
+          <div class="subscription-card">
+            <div class="sub-card-top">
+              <div class="sub-card-icon">&#128221;</div>
+              <div class="sub-card-name">Test Series</div>
+              <div class="sub-card-desc">
+                Perfect for students who want focused test practice and weekly
+                performance insights.
+              </div>
+            </div>
+            <div class="sub-card-price">
+              <span class="sub-price-currency">INR</span>
+              <span class="sub-price-amount">99</span>
+              <span class="sub-price-period">/ month</span>
+            </div>
+            <div class="sub-card-features">
+              <div class="sub-feature">
+                <span class="sub-feature-tick">&#10003;</span>
+                Mock Tests
+              </div>
+              <div class="sub-feature">
+                <span class="sub-feature-tick">&#10003;</span>
+                Daily Practice Tests
+              </div>
+              <div class="sub-feature">
+                <span class="sub-feature-tick">&#10003;</span>
+                Weekly Performance Report
+              </div>
+              <div class="sub-feature">
+                <span class="sub-feature-tick">&#10003;</span>
+                Instant Answers after Each Test
+              </div>
+            </div>
+            <div class="sub-card-cta">
+              <button class="sub-join-btn">Get Started</button>
+            </div>
           </div>
-          <h2 class="chapter">All Subjects (Monthly Plan)</h2>
-          <h4 class="sub-topic">
-            All subjects monthly plan will provide you Unlimited practice
-            questions, Mock Tests, Complete syllabus test series
-          </h4>
-          <a href="/"><button class="join-btn">Join Plan</button></a>
+
+          <!-- Monthly Plan (Popular) -->
+          <div class="subscription-card popular">
+            <span class="popular-badge">&#9733; Most Popular</span>
+            <div class="sub-card-top">
+              <div class="sub-card-icon">&#128218;</div>
+              <div class="sub-card-name">All Subjects — Monthly</div>
+              <div class="sub-card-desc">
+                Full access to all subjects with unlimited practice and complete
+                syllabus test series.
+              </div>
+            </div>
+            <div class="sub-card-price">
+              <span class="sub-price-currency">INR</span>
+              <span class="sub-price-amount">350</span>
+              <span class="sub-price-period">/ month</span>
+            </div>
+            <div class="sub-card-features">
+              <div class="sub-feature">
+                <span class="sub-feature-tick">&#10003;</span>
+                Unlimited Practice Questions
+              </div>
+              <div class="sub-feature">
+                <span class="sub-feature-tick">&#10003;</span>
+                Mock Tests &amp; Topic-wise Tests
+              </div>
+              <div class="sub-feature">
+                <span class="sub-feature-tick">&#10003;</span>
+                Complete Syllabus Test Series
+              </div>
+              <div class="sub-feature">
+                <span class="sub-feature-tick">&#10003;</span>
+                Instant Answers &amp; Explanations
+              </div>
+              <div class="sub-feature">
+                <span class="sub-feature-tick">&#10003;</span>
+                Monthly Performance Report
+              </div>
+            </div>
+            <div class="sub-card-cta">
+              <button class="sub-join-btn">Get Started</button>
+            </div>
+          </div>
+
+          <!-- Yearly Plan -->
+          <div class="subscription-card">
+            <div class="sub-card-top">
+              <div class="sub-card-icon">&#127942;</div>
+              <div class="sub-card-name">All Subjects — Yearly</div>
+              <div class="sub-card-desc">
+                Best value plan for serious students. Everything included, all
+                year long.
+              </div>
+            </div>
+            <div class="sub-card-price">
+              <span class="sub-price-currency">INR</span>
+              <span class="sub-price-amount">999</span>
+              <span class="sub-price-period">/ year</span>
+            </div>
+            <div class="sub-card-features">
+              <div class="sub-feature">
+                <span class="sub-feature-tick">&#10003;</span>
+                Unlimited Practice Questions
+              </div>
+              <div class="sub-feature">
+                <span class="sub-feature-tick">&#10003;</span>
+                Time-Bounded &amp; Full-Length Tests
+              </div>
+              <div class="sub-feature">
+                <span class="sub-feature-tick">&#10003;</span>
+                Chapter Notes &amp; Study Material
+              </div>
+              <div class="sub-feature">
+                <span class="sub-feature-tick">&#10003;</span>
+                Weekly &amp; Monthly Reports
+              </div>
+              <div class="sub-feature">
+                <span class="sub-feature-tick">&#10003;</span>
+                Online Mentor Access
+              </div>
+              <div class="sub-feature">
+                <span class="sub-feature-tick">&#10003;</span>
+                Priority Support
+              </div>
+            </div>
+            <div class="sub-card-cta">
+              <button class="sub-join-btn">Get Started</button>
+            </div>
+          </div>
         </div>
 
-        <div class="subscription-card">
-          <div class="price">
-            <h4>INR 99 /-</h4>
+        <!-- Guarantee Strip -->
+        <div class="sub-guarantee">
+          <div class="guarantee-item">
+            <span class="guarantee-icon">&#128274;</span>
+            Secure Payment
           </div>
-          <h2 class="chapter">Any one Subject</h2>
-          <h4 class="sub-topic">
-            Unlimited Practice/ Topic wise test/ Test Series (complete syllabus)
-          </h4>
-          <a href="/"><button class="join-btn">Join Plan</button></a>
+          <div class="guarantee-item">
+            <span class="guarantee-icon">&#9989;</span>
+            No Hidden Charges
+          </div>
+          <div class="guarantee-item">
+            <span class="guarantee-icon">&#128222;</span>
+            Cancel Anytime
+          </div>
+          <div class="guarantee-item">
+            <span class="guarantee-icon">&#127775;</span>
+            Instant Activation
+          </div>
+        </div>
+
+        <!-- FAQ -->
+        <div class="sub-faq">
+          <h2>Frequently Asked Questions</h2>
+          <div class="sub-faq-line"></div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              Can I switch plans at any time?
+              <span class="faq-arrow">&#9660;</span>
+            </div>
+            <div class="faq-answer">
+              Yes. You can upgrade or change your plan at any time. Your new
+              plan activates immediately and any remaining balance is adjusted
+              accordingly.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              Which classes and subjects are covered?
+              <span class="faq-arrow">&#9660;</span>
+            </div>
+            <div class="faq-answer">
+              Praxes covers Maths (Class I–X), English (Class I–X), and Science
+              (Class VI–X) with topic-wise content and hundreds of practice
+              questions per subject.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              Is there a free trial available?
+              <span class="faq-arrow">&#9660;</span>
+            </div>
+            <div class="faq-answer">
+              We offer a limited free tier so you can explore the platform
+              before committing. Sign up and try select topics at no cost.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              What is the refund policy?
+              <span class="faq-arrow">&#9660;</span>
+            </div>
+            <div class="faq-answer">
+              Please refer to our Refund Policy page for full details. Refund
+              requests are reviewed on a case-by-case basis within 7 days of
+              purchase.
+            </div>
+          </div>
         </div>
       </div>
     </main>
@@ -120,7 +297,7 @@
             <div class="contact">
               <h4 class="contact-title">Address</h4>
               <h5>
-                1st floor, Srishti’s Palazzo commercial complex, St. Xavier
+                1st floor, Srishti's Palazzo commercial complex, St. Xavier
                 School Road, Raipur, Chhattisgarh
               </h5>
             </div>
@@ -148,7 +325,7 @@
           <a href="disclaimer"><h4>Disclaimer</h4></a>
           <a href="privacy"><h4>Privacy</h4></a>
           <a href="refund_policy"><h4>Refund Policy</h4></a>
-          <a href="terms_and_condition"><h4>Terms and condition</h4></a>
+          <a href="terms_and_condition"><h4>Terms and Conditions</h4></a>
         </div>
       </div>
     </footer>

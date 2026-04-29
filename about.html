@@ -1,18 +1,17 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Praxes</title>
+    <title>Praxes — About Us</title>
+    <link rel="stylesheet" href="navbar.css" />
     <link rel="stylesheet" href="about.css" />
     <link rel="stylesheet" href="footer.css" />
-    <link rel="stylesheet" href="navbar.css" />
   </head>
-
   <body>
     <header id="header">
       <section id="logo">
-        <img src="logo1.png" alt="" />
+        <img src="logo1.png" alt="Praxes Logo" />
         <div class="logo-name">
           <h3>PRAXES</h3>
           <h5>Practice</h5>
@@ -25,12 +24,15 @@
             class="menuImg"
             src="menu.svg"
             alt="menu"
-            onclick="event.preventDefault();"
+            onclick="event.preventDefault()"
           />
         </div>
         <section id="mobile-menu">
           <a href="index.html"><button class="btn">HOME</button></a>
-          <a href="about.html"><button class="btn">ABOUT</button></a>
+          <a href="classes.html"><button class="btn">CLASSES</button></a>
+          <a href="about.html"
+            ><button class="btn active">GET MENTOR</button></a
+          >
           <a href="login.html"><button class="btn">LOGIN</button></a>
           <a href="subscription.html"
             ><button class="btn">SUBSCRIPTIONS</button></a
@@ -38,7 +40,10 @@
         </section>
         <section id="menu">
           <a href="index.html"><button class="btn">HOME</button></a>
-          <a href="about.html"><button class="btn">ABOUT</button></a>
+          <a href="classes.html"><button class="btn">CLASSES</button></a>
+          <a href="about.html"
+            ><button class="btn active">GET MENTOR</button></a
+          >
           <a href="login.html"><button class="btn">LOGIN</button></a>
           <a href="subscription.html"
             ><button class="btn">SUBSCRIPTIONS</button></a
@@ -48,22 +53,105 @@
     </header>
 
     <main id="about-main">
-      <div id="page3" class="page3">
-        <h1 class="heading">ABOUT US</h1>
-        <p class="paragraph">
+      <!-- HERO -->
+      <div class="about-hero">
+        <div class="about-hero-label">Our Story</div>
+        <h1>About <span>Praxes</span></h1>
+        <p>
+          We believe every student deserves the right environment to grow — one
+          built on consistent practice, clear feedback, and genuine support.
+        </p>
+      </div>
+
+      <!-- STATS STRIP -->
+      <div class="about-stats">
+        <div class="about-stat">
+          <span class="about-stat-num">10K+</span>
+          <span class="about-stat-label">Practice Questions</span>
+        </div>
+        <div class="about-stat">
+          <span class="about-stat-num">Class I–X</span>
+          <span class="about-stat-label">Full Coverage</span>
+        </div>
+        <div class="about-stat">
+          <span class="about-stat-num">3</span>
+          <span class="about-stat-label">Core Subjects</span>
+        </div>
+        <div class="about-stat">
+          <span class="about-stat-num">500+</span>
+          <span class="about-stat-label">Happy Students</span>
+        </div>
+      </div>
+
+      <!-- MISSION -->
+      <div class="about-mission">
+        <span class="about-section-label">Our Mission</span>
+        <h2>Why We Built <span>Praxes</span></h2>
+        <div class="about-underline"></div>
+        <p>
           Practice is the key to perfection. When students practice regularly,
           they improve their skills, understand concepts better, and gain
           confidence. Each attempt helps them identify and fix mistakes, turning
           challenges into strengths. Repetition strengthens memory and builds
           problem-solving abilities, making even difficult tasks easier over
-          time. Practice also teaches discipline and patience, which are
-          essential for success. Perfection is not achieved in a day but through
-          consistent effort and dedication. Every small step taken through
-          practice brings students closer to mastery. Whether preparing for
-          exams or learning new skills, regular practice is the foundation of
-          growth. Start practicing today, and see the difference it makes in
-          your journey to success.
+          time. Practice also teaches discipline and patience — qualities
+          essential for success in every field.
+          <br /><br />
+          Praxes was built on this belief. We wanted to create a platform where
+          every student — regardless of background — could access structured,
+          effective, and affordable practice material. From Class I to Class X,
+          across Maths, Science, and English, Praxes offers topic-wise content,
+          unlimited tests, instant answers, and personalised mentorship. We are
+          not just an app — we are a commitment to every student's potential.
         </p>
+
+        <!-- VALUES -->
+        <div class="about-values">
+          <div class="value-card">
+            <span class="value-icon">&#127919;</span>
+            <h3>Focused Practice</h3>
+            <p>
+              Short, structured sessions that target specific topics — building
+              depth without overwhelming students.
+            </p>
+          </div>
+          <div class="value-card">
+            <span class="value-icon">&#9889;</span>
+            <h3>Instant Feedback</h3>
+            <p>
+              Answers are shown right after every attempt so students can
+              correct mistakes while the context is still fresh.
+            </p>
+          </div>
+          <div class="value-card">
+            <span class="value-icon">&#128202;</span>
+            <h3>Progress Visibility</h3>
+            <p>
+              Clear, honest performance data — for students, parents, and
+              teachers — so everyone stays informed and aligned.
+            </p>
+          </div>
+          <div class="value-card">
+            <span class="value-icon">&#127775;</span>
+            <h3>Accessible to All</h3>
+            <p>
+              Affordable plans, simple interface, and support in regional
+              languages make Praxes genuinely inclusive.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CONTACT CTA -->
+      <div class="about-contact">
+        <h2>Want to Know More?</h2>
+        <p>
+          Reach out to us — we'd love to hear from students, parents, and
+          institutions.
+        </p>
+        <a class="about-contact-btn" href="mailto:praxes2020@gmail.com"
+          >&#9993;&nbsp; praxes2020@gmail.com</a
+        >
       </div>
     </main>
 
@@ -90,7 +178,7 @@
             <div class="contact">
               <h4 class="contact-title">Address</h4>
               <h5>
-                1st floor, Srishti’s Palazzo commercial complex, St. Xavier
+                1st floor, Srishti's Palazzo commercial complex, St. Xavier
                 School Road, Raipur, Chhattisgarh
               </h5>
             </div>
@@ -118,7 +206,7 @@
           <a href="disclaimer"><h4>Disclaimer</h4></a>
           <a href="privacy"><h4>Privacy</h4></a>
           <a href="refund_policy"><h4>Refund Policy</h4></a>
-          <a href="terms_and_condition"><h4>Terms and condition</h4></a>
+          <a href="terms_and_condition"><h4>Terms and Conditions</h4></a>
         </div>
       </div>
     </footer>

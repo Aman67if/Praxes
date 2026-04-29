@@ -1,28 +1,39 @@
+/* =============================================
+   NAVBAR — PRAXES
+   ============================================= */
+
 #header {
   height: 10vh;
+  min-height: 64px;
   width: 100vw;
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 100;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--page-color);
-  box-shadow: 0px 4px 10px gray;
-  padding: 0 2rem 0 0.4rem;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e8edf2;
+  box-shadow: 0 2px 16px rgba(26, 26, 46, 0.07);
+  padding: 0 2rem 0 0.6rem;
+  transition: box-shadow 0.3s ease;
 }
 
+/* ---- Logo ---- */
 #header #logo {
   height: 100%;
   min-width: fit-content;
   display: flex;
-  padding: 0.2rem;
+  align-items: center;
+  padding: 0.3rem 0.4rem;
+  text-decoration: none;
+  gap: 0.1rem;
 }
 
 #header #logo img {
-  height: 100%;
+  height: 80%;
   width: auto;
-  background-size: contain;
+  object-fit: contain;
   user-select: none;
   -webkit-user-drag: none;
 }
@@ -31,105 +42,164 @@
   height: 100%;
   width: auto;
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   justify-content: center;
   flex-direction: column;
   line-height: 1;
-  margin-left: -0.4rem;
+  margin-left: -0.3rem;
 }
 
-#header #logo .logo-name h3,
-h5 {
-  font: bold;
+#header #logo .logo-name h3 {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #1a1a2e;
+  letter-spacing: 1px;
 }
 
+#header #logo .logo-name h5 {
+  font-size: 0.65rem;
+  font-weight: 600;
+  color: #7dad9d;
+  letter-spacing: 0.3px;
+  line-height: 1.3;
+}
+
+/* ---- Desktop Menu ---- */
 #header .menu-container #menu {
   height: fit-content;
   width: fit-content;
-  background-color: var(--background);
+  background-color: #f3faf7;
+  border: 1.5px solid #d4ede5;
   display: flex;
-  padding: 0.8rem 1.2rem 0.8rem 1.2rem;
+  padding: 0.5rem 0.8rem;
   border-radius: 50px;
-  gap: 25px;
+  gap: 4px;
+  align-items: center;
+}
+
+#header #menu a {
+  text-decoration: none;
 }
 
 #header #menu a .btn {
   background: none;
   border: none;
-  font-size: 1.2rem;
+  font-size: 0.88rem;
+  font-weight: 700;
   cursor: pointer;
+  color: #4a4a6a;
+  padding: 0.55rem 1.1rem;
+  border-radius: 50px;
+  transition: all 0.25s ease;
+  letter-spacing: 0.3px;
+  white-space: nowrap;
+  font-family: "Nunito";
 }
 
+#header #menu a .btn:hover {
+  background-color: #a9e3d0;
+  color: #1a1a2e;
+}
+
+#header #menu a .btn.active {
+  background-color: #7dad9d;
+  color: #ffffff;
+}
+
+/* ---- Mobile Hamburger ---- */
 #mobile-menu {
   display: none;
 }
-.mobile-menu-container {
-  display: none;
-}
+
 .menu-open-close {
   display: none;
 }
 
+/* ---- Mobile Breakpoint ---- */
 @media (max-width: 700px) {
-  /* ############### HEADER START ############### */
-
   #header {
     height: 9vh;
+    min-height: 58px;
+    padding: 0 1rem 0 0.4rem;
   }
+
   #header .menu-container #menu {
     display: none;
   }
 
   #header .menu-container .menu-open-close {
-    height: 2.8rem;
-    width: 2.8rem;
+    height: 2.6rem;
+    width: 2.6rem;
     position: absolute;
-    top: 0.40rem;
-    right: 20px;
-    z-index: 10;
-    background: var(--glass-background);
-    backdrop-filter: blur(10px);
-    border: 1.5px solid rgba(255, 255, 255, 0.8);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    z-index: 110;
+    background: #7dad9d;
+    border: 1.5px solid #d4ede5;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+    transition: all 0.25s ease;
+  }
+
+  #header .menu-container .menu-open-close:hover {
+    background: #7dad9d;
   }
 
   #header .menu-container .menu-open-close img {
-    height: 70%;
-    width: 70%;
+    height: 55%;
+    width: 55%;
     user-select: none;
     -webkit-user-drag: none;
   }
 
   #header .menu-container #mobile-menu {
-    height: 0rem;
-    width: 100%;
-    background: var(--glass-background);
-    backdrop-filter: blur(10px);
-    border: 1.6px solid rgba(255, 255, 255, 0.8);
-    box-shadow: 0px -4px 6px inset rgba(255, 255, 255, 0.3);
-    border-radius: 10px;
+    height: 0;
+    width: 92vw;
+    background: #ffffff;
+    border: 1.5px solid #d4ede5;
+    box-shadow: 0 8px 32px rgba(26, 26, 46, 0.12);
+    border-radius: 16px;
     display: none;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
     justify-content: center;
-    gap: 30px;
+    gap: 6px;
+    padding: 1rem;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: calc(9vh + 8px);
+    right: 4vw;
     overflow: hidden;
-    opacity: 1;
+    opacity: 0;
+    z-index: 105;
+  }
+
+  #header .menu-container #mobile-menu a {
+    text-decoration: none;
   }
 
   #header .menu-container #mobile-menu a .btn {
     background: none;
     border: none;
-    font-size: 1.4rem;
+    font-size: 1rem;
+    font-weight: 700;
     cursor: pointer;
+    color: #1a1a2e;
+    padding: 0.9rem 1rem;
+    width: 100%;
+    text-align: left;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+    font-family: "Nunito";
+    letter-spacing: 0.3px;
   }
 
-  /* ############### HEADER END ############### */
+  #header .menu-container #mobile-menu a .btn:hover,
+  #header .menu-container #mobile-menu a .btn.active {
+    background-color: #f3faf7;
+    color: #7dad9d;
+  }
 }

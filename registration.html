@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Praxes — Register</title>
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="registration.css" />
+    <link rel="stylesheet" href="footer.css" />
+  </head>
+  <body>
+    <!-- ===================== NAVBAR ===================== -->
+    <header id="header">
+      <section id="logo">
+        <img src="logo1.png" alt="Praxes Logo" />
+        <div class="logo-name">
+          <h3>PRAXES</h3>
+          <h5>Practice</h5>
+          <h5>Makes Perfect</h5>
+        </div>
+      </section>
+      <div class="menu-container">
+        <div class="menu-open-close">
+          <img
+            class="menuImg"
+            src="menu.svg"
+            alt="menu"
+            onclick="event.preventDefault()"
+          />
+        </div>
+        <section id="mobile-menu">
+          <a href="index.html"><button class="btn">HOME</button></a>
+          <a href="classes.html"><button class="btn">CLASSES</button></a>
+          <a href="about.html"><button class="btn">GET MENTOR</button></a>
+          <a href="login.html"><button class="btn">LOGIN</button></a>
+          <a href="subscription.html"
+            ><button class="btn">SUBSCRIPTIONS</button></a
+          >
+        </section>
+        <section id="menu">
+          <a href="index.html"><button class="btn">HOME</button></a>
+          <a href="classes.html"><button class="btn">CLASSES</button></a>
+          <a href="about.html"><button class="btn">GET MENTOR</button></a>
+          <a href="login.html"><button class="btn">LOGIN</button></a>
+          <a href="subscription.html"
+            ><button class="btn">SUBSCRIPTIONS</button></a
+          >
+        </section>
+      </div>
+    </header>
+
+    <!-- ===================== MAIN ===================== -->
+    <main id="registration-main">
+      <div class="reg-container">
+        <!-- Dark header with steps indicator -->
+        <div class="reg-header">
+          <div class="reg-avatar">&#9997;&#65039;</div>
+          <h2>Create Your Account</h2>
+          <p>Join thousands of students already learning with Praxes</p>
+        </div>
+
+        <!-- Form body -->
+        <div class="reg-body">
+          <!-- Row: First + Last name -->
+          <div class="reg-row">
+            <div class="reg-field">
+              <label for="first-name">First Name</label>
+              <input
+                id="first-name"
+                class="input-bar"
+                type="text"
+                placeholder="e.g. Aarav"
+                autocomplete="given-name"
+              />
+            </div>
+            <div class="reg-field">
+              <label for="last-name">Last Name</label>
+              <input
+                id="last-name"
+                class="input-bar"
+                type="text"
+                placeholder="e.g. Sharma"
+                autocomplete="family-name"
+              />
+            </div>
+          </div>
+
+          <!-- Email -->
+          <div class="reg-field">
+            <label for="email">Email Address</label>
+            <input
+              id="email"
+              class="input-bar"
+              type="email"
+              placeholder="you@example.com"
+              autocomplete="email"
+            />
+          </div>
+
+          <!-- Row: Mobile + Class -->
+          <div class="reg-row">
+            <div class="reg-field">
+              <label for="mobile">Mobile Number</label>
+              <input
+                id="mobile"
+                class="input-bar"
+                type="tel"
+                placeholder="+91 XXXXX XXXXX"
+                autocomplete="tel"
+              />
+            </div>
+            <div class="reg-field">
+              <label for="class-select">Your Class</label>
+              <select id="class-select" class="input-bar">
+                <option value="" disabled selected>Select class</option>
+                <option value="1">Class I</option>
+                <option value="2">Class II</option>
+                <option value="3">Class III</option>
+                <option value="4">Class IV</option>
+                <option value="5">Class V</option>
+                <option value="6">Class VI</option>
+                <option value="7">Class VII</option>
+                <option value="8">Class VIII</option>
+                <option value="9">Class IX</option>
+                <option value="10">Class X</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Divider -->
+          <div class="reg-divider">
+            <span class="reg-divider-line"></span>
+            <span class="reg-divider-text">Set a Password</span>
+            <span class="reg-divider-line"></span>
+          </div>
+
+          <!-- Password -->
+          <div class="reg-field">
+            <label for="password">Password</label>
+            <div class="input-wrap">
+              <input
+                id="password"
+                class="input-bar"
+                type="password"
+                placeholder="Min. 8 characters"
+                autocomplete="new-password"
+                oninput="checkStrength(this.value)"
+              />
+              <button
+                class="input-toggle"
+                type="button"
+                onclick="togglePwd('password', this)"
+                tabindex="-1"
+              >
+                &#128065;
+              </button>
+            </div>
+            <!-- Strength indicator -->
+            <div class="password-strength" id="strength-bars">
+              <div class="strength-bar" id="bar1"></div>
+              <div class="strength-bar" id="bar2"></div>
+              <div class="strength-bar" id="bar3"></div>
+              <div class="strength-bar" id="bar4"></div>
+              <span class="strength-label" id="strength-label"></span>
+            </div>
+          </div>
+
+          <!-- Confirm Password -->
+          <div class="reg-field">
+            <label for="confirm-password">Confirm Password</label>
+            <div class="input-wrap">
+              <input
+                id="confirm-password"
+                class="input-bar"
+                type="password"
+                placeholder="Re-enter your password"
+                autocomplete="new-password"
+                oninput="checkMatch()"
+              />
+              <button
+                class="input-toggle"
+                type="button"
+                onclick="togglePwd('confirm-password', this)"
+                tabindex="-1"
+              >
+                &#128065;
+              </button>
+            </div>
+            <span class="field-hint" id="match-hint"></span>
+          </div>
+
+          <!-- Terms -->
+          <label class="reg-terms">
+            <input type="checkbox" id="terms-check" />
+            <span class="reg-terms-text">
+              I agree to the
+              <a href="terms_and_condition">Terms &amp; Conditions</a>
+              and
+              <a href="privacy">Privacy Policy</a>
+              of Praxes.
+            </span>
+          </label>
+
+          <!-- Submit -->
+          <button class="reg-submit" onclick="handleRegister()">
+            Create Account &nbsp;&#8594;
+          </button>
+
+          <!-- Login link -->
+          <p class="reg-footer-note">
+            Already have an account?&nbsp;
+            <a href="login.html">Log in here</a>
+          </p>
+        </div>
+        <!-- /reg-body -->
+      </div>
+      <!-- /reg-container -->
+    </main>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer id="footer">
+      <div class="contact-us">
+        <h3>Contact Us</h3>
+        <div class="contacts">
+          <div class="contact-details">
+            <img src="phone.svg" alt="" />
+            <div class="contact">
+              <h4 class="contact-title">Phone</h4>
+              <h5>+91 62602 03132</h5>
+            </div>
+          </div>
+          <div class="contact-details">
+            <img src="mail.svg" alt="" />
+            <div class="contact">
+              <h4 class="contact-title">Email</h4>
+              <h5>praxes2020@gmail.com</h5>
+            </div>
+          </div>
+          <div class="contact-details">
+            <img src="map.svg" alt="" />
+            <div class="contact">
+              <h4 class="contact-title">Address</h4>
+              <h5>
+                1st floor, Srishti's Palazzo commercial complex, St. Xavier
+                School Road, Raipur, Chhattisgarh
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="social-platforms">
+        <h3>Our Platforms</h3>
+        <div class="platform">
+          <img src="Facebook.svg" alt="" />
+          <h4>Facebook</h4>
+        </div>
+        <div class="platform">
+          <img src="instagram.svg" alt="" />
+          <h4>Instagram</h4>
+        </div>
+        <div class="platform">
+          <img src="LinkedIn.svg" alt="" />
+          <h4>LinkedIn</h4>
+        </div>
+      </div>
+      <div class="what-offer">
+        <h3>Important Links</h3>
+        <div class="offers">
+          <a href="disclaimer"><h4>Disclaimer</h4></a>
+          <a href="privacy"><h4>Privacy</h4></a>
+          <a href="refund_policy"><h4>Refund Policy</h4></a>
+          <a href="terms_and_condition"><h4>Terms and Conditions</h4></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ===================== SCRIPTS ===================== -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

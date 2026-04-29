@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -20,40 +20,79 @@
       </section>
       <div class="menu-container">
         <div class="menu-open-close">
-          <img class="menuImg" src="menu.svg" alt="menu" onclick="event.preventDefault();" />
+          <img
+            class="menuImg"
+            src="menu.svg"
+            alt="menu"
+            onclick="event.preventDefault()"
+          />
         </div>
         <section id="mobile-menu">
           <a href="index.html"><button class="btn">HOME</button></a>
           <a href="classes.html"><button class="btn">CLASSES</button></a>
-          <a href="about.html"><button class="btn">ABOUT</button></a>
+          <a href="about.html"><button class="btn">GET MENTOR</button></a>
           <a href="login.html"><button class="btn">LOGIN</button></a>
-          <a href="subscription.html"><button class="btn">SUBSCRIPTIONS</button></a>
+          <a href="subscription.html"
+            ><button class="btn">SUBSCRIPTIONS</button></a
+          >
         </section>
         <section id="menu">
           <a href="index.html"><button class="btn">HOME</button></a>
           <a href="classes.html"><button class="btn">CLASSES</button></a>
-          <a href="about.html"><button class="btn">ABOUT</button></a>
+          <a href="about.html"><button class="btn">GET MENTOR</button></a>
           <a href="login.html"><button class="btn">LOGIN</button></a>
-          <a href="subscription.html"><button class="btn">SUBSCRIPTIONS</button></a>
+          <a href="subscription.html"
+            ><button class="btn">SUBSCRIPTIONS</button></a
+          >
         </section>
       </div>
     </header>
 
     <main id="main">
-
       <!-- PAGE HERO BANNER -->
-      <section class="page1" style="min-height:30vh; padding: 3rem 2rem;">
-        <div class="hero" style="grid-template-columns:1fr; text-align:center; max-width:800px;">
-          <div class="hero__content" style="align-items:center;">
+      <section class="page1" style="min-height: 30vh; padding: 3rem 2rem">
+        <div
+          class="hero"
+          style="
+            grid-template-columns: 1fr;
+            text-align: center;
+            max-width: 800px;
+          "
+        >
+          <div class="hero__content" style="align-items: center">
             <div class="hero__badge">Class I — Class X</div>
-            <h1 class="hero__title" style="font-size:clamp(2rem,4vw,3.2rem);">Select Your Class &amp; Subject</h1>
-            <p class="hero__subtitle" style="text-align:center;">
-              Explore our full range of topic-wise content across Math, Science, and English
-              for every class from I to X — with hundreds of practice questions ready for you.
-            </p>
-            <div class="hero__actions" style="justify-content:center;">
-              <a class="cta-btn primary" href="registration">Start Practicing</a>
-              <a class="cta-btn secondary" href="subscription.html">View Plans</a>
+            <h1 class="hero__title" style="font-size: clamp(2rem, 4vw, 3.2rem)">
+              Select Your Class &amp; Subject
+            </h1>
+
+            <!-- SUBJECTS BANNER -->
+            <div class="subjects-banner classes-subjects-banner">
+              <a class="subject-item">
+                <span class="subject-icon">&#10010;</span>
+                <span class="subject-name">Maths</span>
+                <span class="subject-range">Class 1 – 10</span>
+              </a>
+              <span class="subject-pipe"></span>
+              <a class="subject-item">
+                <span class="subject-icon">&#10010;</span>
+                <span class="subject-name">English</span>
+                <span class="subject-range">Class 1 – 10</span>
+              </a>
+              <span class="subject-pipe"></span>
+              <a class="subject-item">
+                <span class="subject-icon">&#10010;</span>
+                <span class="subject-name">Science</span>
+                <span class="subject-range">Class 6 – 10</span>
+              </a>
+            </div>
+
+            <div class="hero__actions" style="justify-content: center">
+              <a class="cta-btn primary" href="registration.html"
+                >Start Practicing</a
+              >
+              <a class="cta-btn secondary" href="subscription.html"
+                >View Plans</a
+              >
             </div>
           </div>
         </div>
@@ -61,7 +100,7 @@
 
       <!-- OUR CLASSES GRID -->
       <section class="page2">
-        <h2>Our Classes</h2>
+        <!-- <h2>Our Classes</h2> -->
         <div class="classes">
           <div class="class">
             <div class="classno-container">
@@ -71,19 +110,28 @@
               <div class="subject">
                 <div class="subject-type">Math :</div>
                 <div class="hover subject-board-type">
-                  <a href="chapters_by_class?class_id=3&chapter_type=1&subject_id=1">37</a>&nbsp;Topic
+                  <a
+                    href="chapters_by_class?class_id=3&chapter_type=1&subject_id=1"
+                    >37</a
+                  >&nbsp;Topic
                 </div>
               </div>
               <div class="subject">
                 <div class="subject-type">Science :</div>
                 <div class="hover subject-board-type">
-                  <a href="chapters_by_class?class_id=3&chapter_type=1&subject_id=4">0</a>&nbsp;Topic
+                  <a
+                    href="chapters_by_class?class_id=3&chapter_type=1&subject_id=4"
+                    >0</a
+                  >&nbsp;Topic
                 </div>
               </div>
               <div class="subject">
                 <div class="subject-type">English :</div>
                 <div class="hover subject-board-type">
-                  <a href="chapters_by_class?class_id=3&chapter_type=1&subject_id=6">0</a>&nbsp;Topic
+                  <a
+                    href="chapters_by_class?class_id=3&chapter_type=1&subject_id=6"
+                    >0</a
+                  >&nbsp;Topic
                 </div>
               </div>
             </div>
@@ -96,19 +144,28 @@
               <div class="subject">
                 <div class="subject-type">Math :</div>
                 <div class="hover subject-board-type">
-                  <a href="chapters_by_class?class_id=4&chapter_type=1&subject_id=1">34</a>&nbsp;Topic
+                  <a
+                    href="chapters_by_class?class_id=4&chapter_type=1&subject_id=1"
+                    >34</a
+                  >&nbsp;Topic
                 </div>
               </div>
               <div class="subject">
                 <div class="subject-type">Science :</div>
                 <div class="hover subject-board-type">
-                  <a href="chapters_by_class?class_id=4&chapter_type=1&subject_id=4">0</a>&nbsp;Topic
+                  <a
+                    href="chapters_by_class?class_id=4&chapter_type=1&subject_id=4"
+                    >0</a
+                  >&nbsp;Topic
                 </div>
               </div>
               <div class="subject">
                 <div class="subject-type">English :</div>
                 <div class="hover subject-board-type">
-                  <a href="chapters_by_class?class_id=4&chapter_type=1&subject_id=6">0</a>&nbsp;Topic
+                  <a
+                    href="chapters_by_class?class_id=4&chapter_type=1&subject_id=6"
+                    >0</a
+                  >&nbsp;Topic
                 </div>
               </div>
             </div>
@@ -121,19 +178,28 @@
               <div class="subject">
                 <div class="subject-type">Math :</div>
                 <div class="hover subject-board-type">
-                  <a href="chapters_by_class?class_id=5&chapter_type=1&subject_id=1">25</a>&nbsp;Topic
+                  <a
+                    href="chapters_by_class?class_id=5&chapter_type=1&subject_id=1"
+                    >25</a
+                  >&nbsp;Topic
                 </div>
               </div>
               <div class="subject">
                 <div class="subject-type">Science :</div>
                 <div class="hover subject-board-type">
-                  <a href="chapters_by_class?class_id=5&chapter_type=1&subject_id=4">0</a>&nbsp;Topic
+                  <a
+                    href="chapters_by_class?class_id=5&chapter_type=1&subject_id=4"
+                    >0</a
+                  >&nbsp;Topic
                 </div>
               </div>
               <div class="subject">
                 <div class="subject-type">English :</div>
                 <div class="hover subject-board-type">
-                  <a href="chapters_by_class?class_id=5&chapter_type=1&subject_id=6">0</a>&nbsp;Topic
+                  <a
+                    href="chapters_by_class?class_id=5&chapter_type=1&subject_id=6"
+                    >0</a
+                  >&nbsp;Topic
                 </div>
               </div>
             </div>
@@ -146,19 +212,28 @@
               <div class="subject">
                 <div class="subject-type">Math :</div>
                 <div class="hover subject-board-type">
-                  <a href="chapters_by_class?class_id=6&chapter_type=1&subject_id=1">0</a>&nbsp;Topic
+                  <a
+                    href="chapters_by_class?class_id=6&chapter_type=1&subject_id=1"
+                    >0</a
+                  >&nbsp;Topic
                 </div>
               </div>
               <div class="subject">
                 <div class="subject-type">Science :</div>
                 <div class="hover subject-board-type">
-                  <a href="chapters_by_class?class_id=6&chapter_type=1&subject_id=4">0</a>&nbsp;Topic
+                  <a
+                    href="chapters_by_class?class_id=6&chapter_type=1&subject_id=4"
+                    >0</a
+                  >&nbsp;Topic
                 </div>
               </div>
               <div class="subject">
                 <div class="subject-type">English :</div>
                 <div class="hover subject-board-type">
-                  <a href="chapters_by_class?class_id=6&chapter_type=1&subject_id=6">0</a>&nbsp;Topic
+                  <a
+                    href="chapters_by_class?class_id=6&chapter_type=1&subject_id=6"
+                    >0</a
+                  >&nbsp;Topic
                 </div>
               </div>
             </div>
@@ -171,19 +246,28 @@
               <div class="subject">
                 <div class="subject-type">Math :</div>
                 <div class="hover subject-board-type">
-                  <a href="chapters_by_class?class_id=7&chapter_type=1&subject_id=1">0</a>&nbsp;Topic
+                  <a
+                    href="chapters_by_class?class_id=7&chapter_type=1&subject_id=1"
+                    >0</a
+                  >&nbsp;Topic
                 </div>
               </div>
               <div class="subject">
                 <div class="subject-type">Science :</div>
                 <div class="hover subject-board-type">
-                  <a href="chapters_by_class?class_id=7&chapter_type=1&subject_id=4">0</a>&nbsp;Topic
+                  <a
+                    href="chapters_by_class?class_id=7&chapter_type=1&subject_id=4"
+                    >0</a
+                  >&nbsp;Topic
                 </div>
               </div>
               <div class="subject">
                 <div class="subject-type">English :</div>
                 <div class="hover subject-board-type">
-                  <a href="chapters_by_class?class_id=7&chapter_type=1&subject_id=6">0</a>&nbsp;Topic
+                  <a
+                    href="chapters_by_class?class_id=7&chapter_type=1&subject_id=6"
+                    >0</a
+                  >&nbsp;Topic
                 </div>
               </div>
             </div>
@@ -196,19 +280,28 @@
               <div class="subject">
                 <div class="subject-type">Math :</div>
                 <div class="hover subject-board-type">
-                  <a href="chapters_by_class?class_id=8&chapter_type=1&subject_id=1">10</a>&nbsp;Topic
+                  <a
+                    href="chapters_by_class?class_id=8&chapter_type=1&subject_id=1"
+                    >10</a
+                  >&nbsp;Topic
                 </div>
               </div>
               <div class="subject">
                 <div class="subject-type">Science :</div>
                 <div class="hover subject-board-type">
-                  <a href="chapters_by_class?class_id=8&chapter_type=1&subject_id=4">37</a>&nbsp;Topic
+                  <a
+                    href="chapters_by_class?class_id=8&chapter_type=1&subject_id=4"
+                    >37</a
+                  >&nbsp;Topic
                 </div>
               </div>
               <div class="subject">
                 <div class="subject-type">English :</div>
                 <div class="hover subject-board-type">
-                  <a href="chapters_by_class?class_id=8&chapter_type=1&subject_id=6">12</a>&nbsp;Topic
+                  <a
+                    href="chapters_by_class?class_id=8&chapter_type=1&subject_id=6"
+                    >12</a
+                  >&nbsp;Topic
                 </div>
               </div>
             </div>
@@ -221,19 +314,28 @@
               <div class="subject">
                 <div class="subject-type">Math :</div>
                 <div class="hover subject-board-type">
-                  <a href="chapters_by_class?class_id=9&chapter_type=1&subject_id=1">70</a>&nbsp;Topic
+                  <a
+                    href="chapters_by_class?class_id=9&chapter_type=1&subject_id=1"
+                    >70</a
+                  >&nbsp;Topic
                 </div>
               </div>
               <div class="subject">
                 <div class="subject-type">Science :</div>
                 <div class="hover subject-board-type">
-                  <a href="chapters_by_class?class_id=9&chapter_type=1&subject_id=4">49</a>&nbsp;Topic
+                  <a
+                    href="chapters_by_class?class_id=9&chapter_type=1&subject_id=4"
+                    >49</a
+                  >&nbsp;Topic
                 </div>
               </div>
               <div class="subject">
                 <div class="subject-type">English :</div>
                 <div class="hover subject-board-type">
-                  <a href="chapters_by_class?class_id=9&chapter_type=1&subject_id=6">16</a>&nbsp;Topic
+                  <a
+                    href="chapters_by_class?class_id=9&chapter_type=1&subject_id=6"
+                    >16</a
+                  >&nbsp;Topic
                 </div>
               </div>
             </div>
@@ -246,19 +348,28 @@
               <div class="subject">
                 <div class="subject-type">Math :</div>
                 <div class="hover subject-board-type">
-                  <a href="chapters_by_class?class_id=10&chapter_type=1&subject_id=1">51</a>&nbsp;Topic
+                  <a
+                    href="chapters_by_class?class_id=10&chapter_type=1&subject_id=1"
+                    >51</a
+                  >&nbsp;Topic
                 </div>
               </div>
               <div class="subject">
                 <div class="subject-type">Science :</div>
                 <div class="hover subject-board-type">
-                  <a href="chapters_by_class?class_id=10&chapter_type=1&subject_id=4">13</a>&nbsp;Topic
+                  <a
+                    href="chapters_by_class?class_id=10&chapter_type=1&subject_id=4"
+                    >13</a
+                  >&nbsp;Topic
                 </div>
               </div>
               <div class="subject">
                 <div class="subject-type">English :</div>
                 <div class="hover subject-board-type">
-                  <a href="chapters_by_class?class_id=10&chapter_type=1&subject_id=6">13</a>&nbsp;Topic
+                  <a
+                    href="chapters_by_class?class_id=10&chapter_type=1&subject_id=6"
+                    >13</a
+                  >&nbsp;Topic
                 </div>
               </div>
             </div>
@@ -271,19 +382,28 @@
               <div class="subject">
                 <div class="subject-type">Math :</div>
                 <div class="hover subject-board-type">
-                  <a href="chapters_by_class?class_id=11&chapter_type=1&subject_id=1">63</a>&nbsp;Topic
+                  <a
+                    href="chapters_by_class?class_id=11&chapter_type=1&subject_id=1"
+                    >63</a
+                  >&nbsp;Topic
                 </div>
               </div>
               <div class="subject">
                 <div class="subject-type">Science :</div>
                 <div class="hover subject-board-type">
-                  <a href="chapters_by_class?class_id=11&chapter_type=1&subject_id=4">57</a>&nbsp;Topic
+                  <a
+                    href="chapters_by_class?class_id=11&chapter_type=1&subject_id=4"
+                    >57</a
+                  >&nbsp;Topic
                 </div>
               </div>
               <div class="subject">
                 <div class="subject-type">English :</div>
                 <div class="hover subject-board-type">
-                  <a href="chapters_by_class?class_id=11&chapter_type=1&subject_id=6">9</a>&nbsp;Topic
+                  <a
+                    href="chapters_by_class?class_id=11&chapter_type=1&subject_id=6"
+                    >9</a
+                  >&nbsp;Topic
                 </div>
               </div>
             </div>
@@ -296,19 +416,28 @@
               <div class="subject">
                 <div class="subject-type">Math :</div>
                 <div class="hover subject-board-type">
-                  <a href="chapters_by_class?class_id=12&chapter_type=1&subject_id=1">80</a>&nbsp;Topic
+                  <a
+                    href="chapters_by_class?class_id=12&chapter_type=1&subject_id=1"
+                    >80</a
+                  >&nbsp;Topic
                 </div>
               </div>
               <div class="subject">
                 <div class="subject-type">Science :</div>
                 <div class="hover subject-board-type">
-                  <a href="chapters_by_class?class_id=12&chapter_type=1&subject_id=4">54</a>&nbsp;Topic
+                  <a
+                    href="chapters_by_class?class_id=12&chapter_type=1&subject_id=4"
+                    >54</a
+                  >&nbsp;Topic
                 </div>
               </div>
               <div class="subject">
                 <div class="subject-type">English :</div>
                 <div class="hover subject-board-type">
-                  <a href="chapters_by_class?class_id=12&chapter_type=1&subject_id=6">12</a>&nbsp;Topic
+                  <a
+                    href="chapters_by_class?class_id=12&chapter_type=1&subject_id=6"
+                    >12</a
+                  >&nbsp;Topic
                 </div>
               </div>
             </div>
@@ -321,19 +450,27 @@
           <div class="card class">
             <div class="price"><h4>INR 99 /-</h4></div>
             <h2 class="chapter">Test Series</h2>
-            <h4 class="sub-topic">Mock Test / Daily Practice Tests / Weekly Performance Report</h4>
+            <h4 class="sub-topic">
+              Mock Test / Daily Practice Tests / Weekly Performance Report
+            </h4>
             <button class="join-btn">Join Plan</button>
           </div>
           <div class="card class">
             <div class="price"><h4>INR 999 /-</h4></div>
             <h2 class="chapter">All Subjects (Yearly Plan)</h2>
-            <h4 class="sub-topic">Improve your grades with PRAXES yearly plan — Unlimited Practice Questions / Time Bounded Tests / Notes / Weekly and Monthly Report</h4>
+            <h4 class="sub-topic">
+              Improve your grades with PRAXES yearly plan — Unlimited Practice
+              Questions / Time Bounded Tests / Notes / Weekly and Monthly Report
+            </h4>
             <button class="join-btn">Join Plan</button>
           </div>
           <div class="card class">
             <div class="price"><h4>INR 350 /-</h4></div>
             <h2 class="chapter">All Subjects (Monthly Plan)</h2>
-            <h4 class="sub-topic">All subjects monthly plan — Unlimited Practice Questions, Mock Tests, Complete Syllabus Test Series</h4>
+            <h4 class="sub-topic">
+              All subjects monthly plan — Unlimited Practice Questions, Mock
+              Tests, Complete Syllabus Test Series
+            </h4>
             <button class="join-btn">Join Plan</button>
           </div>
         </div>
@@ -342,7 +479,6 @@
           <button>Explore All Subscriptions</button>
         </a>
       </section>
-
     </main>
 
     <footer id="footer">
@@ -367,16 +503,28 @@
             <img src="map.svg" alt="" />
             <div class="contact">
               <h4 class="contact-title">Address</h4>
-              <h5>1st floor, Srishti's Palazzo commercial complex, St. Xavier School Road, Raipur, Chhattisgarh</h5>
+              <h5>
+                1st floor, Srishti's Palazzo commercial complex, St. Xavier
+                School Road, Raipur, Chhattisgarh
+              </h5>
             </div>
           </div>
         </div>
       </div>
       <div class="social-platforms">
         <h3>Our Platforms</h3>
-        <div class="platform"><img src="Facebook.svg" alt="" /><h4>Facebook</h4></div>
-        <div class="platform"><img src="instagram.svg" alt="" /><h4>Instagram</h4></div>
-        <div class="platform"><img src="LinkedIn.svg" alt="" /><h4>LinkedIn</h4></div>
+        <div class="platform">
+          <img src="Facebook.svg" alt="" />
+          <h4>Facebook</h4>
+        </div>
+        <div class="platform">
+          <img src="instagram.svg" alt="" />
+          <h4>Instagram</h4>
+        </div>
+        <div class="platform">
+          <img src="LinkedIn.svg" alt="" />
+          <h4>LinkedIn</h4>
+        </div>
       </div>
       <div class="what-offer">
         <h3>Important Links</h3>
@@ -389,7 +537,12 @@
       </div>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="script.js"></script>
   </body>
 </html>
