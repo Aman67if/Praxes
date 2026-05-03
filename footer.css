@@ -60,6 +60,11 @@
   margin: 0;
 }
 
+#footer .contact-us .contact h5 a[href^="tel"] {
+    color: white !important;
+    text-decoration: none !important;
+}   
+
 #footer h3 {
   font-size: 1.5rem;
   font-weight: 700;
